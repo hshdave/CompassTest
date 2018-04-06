@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     private void initData() {
         // Decode the drawable into a bitmap
-        arrowImg = BitmapFactory.decodeResource(getResources(), R.drawable.arrow);
+        arrowImg = BitmapFactory.decodeResource(getResources(), R.drawable.arrow3);
 
         //magnetic sensors setups
         sensorService = (SensorManager) getSystemService(Context.SENSOR_SERVICE);

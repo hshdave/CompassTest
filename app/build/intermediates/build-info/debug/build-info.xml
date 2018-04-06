@@ -5,24 +5,24 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="CLASS_ADDED"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.1.0"
-    timestamp="1523056194758"
+    timestamp="1523056883289"
     token="235544559678105271"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="149" />
+        duration="128" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="32" />
+        duration="33" />
     <task
         name="verifier"
-        duration="15" />
+        duration="12" />
 
     <artifact
         location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
@@ -95,8 +95,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1523056194758"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1523056883289"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
