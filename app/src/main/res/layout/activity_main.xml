@@ -11,6 +11,12 @@
     android:paddingTop="0dp"
     tools:context="com.zoom.event.compasstest.MainActivity">
 
+
+    <SurfaceView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cameraview"/>
+
     <TextView
         android:id="@+id/random_text"
         android:layout_width="wrap_content"
@@ -19,38 +25,17 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
         android:text="0"
+        android:textColor="#fff"
         android:textSize="24sp" />
-
-    <!--<ImageView-->
-        <!--android:id="@+id/img_compass"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentStart="true"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_marginTop="48dp"-->
-        <!--android:scaleType="centerInside"-->
-        <!--android:src="@drawable/compass" />-->
 
     <ImageView
         android:id="@+id/img_arrow"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:rotation="270"
         android:layout_centerInParent="true"
         android:scaleType="centerInside"
         android:src="@drawable/arrow3" />
-
-
-    <!--<ImageView-->
-        <!--android:id="@+id/img_arrow2"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignBottom="@+id/img_compass"-->
-        <!--android:rotation="0"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_marginBottom="117dp"-->
-        <!--android:scaleType="centerInside"-->
-        <!--android:src="@drawable/comm" />-->
 
     <TextView
         android:id="@+id/txt_degree"
@@ -59,6 +44,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="49dp"
+        android:textColor="#fff"
         android:text="0"
         android:textSize="24sp" />
 

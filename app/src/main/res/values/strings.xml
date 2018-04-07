@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CompassTest</string>
+    <string name="app_name">Indoor Navigation</string>
     <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
 AIzaSyDAAMLJ1CG0LyTPWW8GLa0QLMEd8jH1zk0
 </string>

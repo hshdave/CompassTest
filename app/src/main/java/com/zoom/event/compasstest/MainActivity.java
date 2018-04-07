@@ -2,10 +2,13 @@ package com.zoom.event.compasstest;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
+import android.graphics.PixelFormat;
+import android.hardware.Camera;
 import android.hardware.GeomagneticField;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -16,10 +19,14 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,7 +37,11 @@ import com.indooratlas.android.sdk.IALocationManager;
 import com.indooratlas.android.sdk.IALocationRequest;
 import com.indooratlas.android.sdk.resources.IALocationListenerSupport;
 
-public class MainActivity extends AppCompatActivity implements SensorEventListener, LocationListener {
+import java.io.IOException;
+
+import static android.Manifest.permission.ACCESS_FINE_LOCATION;
+
+public class MainActivity extends AppCompatActivity implements SensorEventListener, SurfaceHolder.Callback,LocationListener {
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final int REQUEST_CODE_ACCESS_COARSE_LOCATION = 1;
     private static final int CODE_PERMISSIONS = 0;
@@ -42,9 +53,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private Location LocationObj, destinationObj;
     private float currentDegree = 0f;
     private double lati = 0, longi = 0;
-    private float[] magnitude_values = null;
-    private float[] accelerometer_values = null;
-    private boolean sensorReady = false;
+    private static float[] magnitude_values = null;
+    private static float[] accelerometer_values = null;
+    private static boolean sensorReady = false;
     private long sensorCallbacksCount = 0;
     private Bitmap arrowImg;
     private AsyncTask<Void, Void, Void> asyncTask;
@@ -53,34 +64,57 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private ImageView arrow, imgV90;
     private TextView txt_deg, random_text;
 
+    private Camera mCamera;
+    private SurfaceHolder mSurfaceHolder;
+    private boolean isCameraviewOn = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        requestPermissions();
+        Log.v("Called","OnCreate Called");
+
+       // requestPermissions();
 
         initUi();
 
         initData();
+
+        //indoor atlas location manager setups
+        mIALocationManager = IALocationManager.create(this);
+
     }
 
     private void requestPermissions() {
         String[] neededPermissions = {
                 Manifest.permission.CHANGE_WIFI_STATE,
                 Manifest.permission.ACCESS_WIFI_STATE,
-                Manifest.permission.ACCESS_COARSE_LOCATION
+                Manifest.permission.ACCESS_COARSE_LOCATION,
+                Manifest.permission.CAMERA
         };
         ActivityCompat.requestPermissions(this, neededPermissions, CODE_PERMISSIONS);
     }
 
     private void initUi() {
+        getWindow().setFormat(PixelFormat.UNKNOWN);
+        SurfaceView surfaceView =  findViewById(R.id.cameraview);
+        mSurfaceHolder = surfaceView.getHolder();
+        mSurfaceHolder.addCallback(this);
+        mSurfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+
         //views setups
         arrow = findViewById(R.id.img_arrow);
         //imgV90 = findViewById(R.id.img_arrow2);
         txt_deg = findViewById(R.id.txt_degree);
         random_text = findViewById(R.id.random_text);
+
+        // location getting updated over here
+        random_text.setText("Done!");
+
     }
+
+
 
     private void initData() {
         // Decode the drawable into a bitmap
@@ -92,33 +126,47 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         //location manager setups
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        destinationObj = new Location(locationManager.NETWORK_PROVIDER);
-        destinationObj.setLatitude(45.49519858555764);
-        destinationObj.setLongitude(-73.58037471775334);
+        //destinationObj = new Location(locationManager.NETWORK_PROVIDER);
+        destinationObj = new Location("");
+        destinationObj.setLatitude(45.49515126854131);
+        destinationObj.setLongitude(-73.58030833303928);
+
 
         //check for user permissions
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             txt_deg.setText("Please enable location service");
-            return;
+
+            String[] neededPermissions = {
+                    Manifest.permission.CHANGE_WIFI_STATE,
+                    Manifest.permission.ACCESS_WIFI_STATE,
+                    Manifest.permission.ACCESS_COARSE_LOCATION,
+                    Manifest.permission.CAMERA
+            };
+            ActivityCompat.requestPermissions(this, neededPermissions, CODE_PERMISSIONS);
+
+
         }
 
+    }
 
-        //indoor atlas location manager setups
-        mIALocationManager = IALocationManager.create(this);
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        // location getting updated over here
-        random_text.setText("Done!");
+        return;
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        Log.v("Called","OnResume Called");
         mIALocationManager.requestLocationUpdates(IALocationRequest.create(), mIALocationListener);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+        Log.v("Called","OnStart Called");
         if (sensor != null) {
             sensorService.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
             sensorService.registerListener(this, sensorService.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
@@ -130,6 +178,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     protected void onStop() {
         super.onStop();
+        Log.v("Called","OnStop Called");
         sensorService.unregisterListener(this);
     }
 
@@ -185,7 +234,47 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     @Override
     public void onLocationChanged(Location location) {
-        LocationObj = location;
+        // LocationObj = location;
+    }
+
+    @Override
+    public void surfaceCreated(SurfaceHolder holder) {
+
+        try
+        {
+            mCamera = Camera.open();
+            mCamera.setDisplayOrientation(90);
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+
+    }
+
+    @Override
+    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
+
+        if (isCameraviewOn) {
+            mCamera.stopPreview();
+            isCameraviewOn = false;
+        }
+
+        if (mCamera != null) {
+            try {
+                mCamera.setPreviewDisplay(mSurfaceHolder);
+                mCamera.startPreview();
+                isCameraviewOn = true;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+    @Override
+    public void surfaceDestroyed(SurfaceHolder holder) {
+
     }
 
     private class AsyncSensorUpdater extends AsyncTask<Void, Void, Void> {
@@ -208,11 +297,15 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                         break;
                     case Sensor.TYPE_ACCELEROMETER:
                         accelerometer_values = sensorEvent.values.clone();
+                        sensorReady = true;
                 }
 
-                float azimuth = sensorEvent.values[0];
+
+                Log.v("Sensor Values:", magnitude_values + "  " + accelerometer_values + " " + sensorReady);
+
+                float azimuth = 0;
                 if (magnitude_values != null && accelerometer_values != null && sensorReady) {
-                    sensorReady = false;
+
 
                     float[] R = new float[16];
                     float[] I = new float[16];
@@ -221,7 +314,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
                     azimuth = (int) (Math.toDegrees(SensorManager.getOrientation(R, actual_orientation)[0]) + 360) % 360;
 
-                    Log.v(TAG, actual_orientation + "" + (char) 0x00B0);
+                    Log.v(TAG, azimuth + "" + (char) 0x00B0);
                 }
 
                 float baseAzimuth = azimuth;
@@ -234,6 +327,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
                 azimuth -= geoField.getDeclination(); // converts magnetic north into true north
 
+
+                Log.v("Accurecy", String.valueOf(destinationObj.getAccuracy()));
                 // Store the bearingTo in the bearTo variable
                 float bearTo = LocationObj.bearingTo(destinationObj);
                 // If the bearTo is smaller than 0, add 360 to get the rotation clockwise.
@@ -268,6 +363,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             rotateImageView(arrow, arrowImg, direction);
             txt_deg.setText("" + direction + " - (" + bearingText + ")");
             asyncTask = null;
+            sensorReady = false;
         }
     }
 
@@ -281,51 +377,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         @Override
         public void onLocationChanged(IALocation location) {
             random_text.setText("");
-            random_text.setText("Latitude :: " + location.getLatitude() + " Longitude :: " + location.getLongitude() + " altitude :: " + location.getAltitude());
+            random_text.setText("Latitude :: " + location.getLatitude() + " Longitude :: " + location.getLongitude() + " Accuracy :: " + location.getAccuracy());
             LocationObj = location.toLocation();
-            /*pointerIcon = findViewById(R.id.icon);
-            Log.d("Log", "new location received with coordinates: " + location.getLatitude()
-                    + "," + location.getLongitude());
 
-
-            txt_my.setText("Latitude : " + location.getLatitude());
-            txt_atlas.setText(" Longitude : " + location.getLongitude());
-
-
-            txt_dis.setText("Distance : "+myObjDis(45.49518337252893,45.49518337252893,location.toLocation()));
-
-
-            random_text.setText("");
-            random_text.setText("on location changed!   Lati :: "+location.getLatitude() +" Longi :: "+location.getLongitude());
-            try{
-                lati = location.getLatitude();
-                longi = location.getLongitude();
-
-
-
-                Double delta_x = lati - 45.49518337252893;
-                Double delta_y = (longi)-(-73.58034846752349);
-                Double theta_radians = Math.atan2(delta_y, delta_x);
-                Double newDegree = Math.toDegrees(theta_radians);
-
-
-                //PointF origin = new PointF();
-
-                RotateAnimation rs= new RotateAnimation(currentDegree, newDegree.floatValue(), Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,
-                        0.5F);
-                rs.setDuration(1000);
-                rs.setFillAfter(true);
-
-                arrow.startAnimation(rs);
-
-                currentDegree = -newDegree.floatValue();
-
-                txt_deg.setText("");
-                txt_deg.setText("Degree -> " + newDegree .toString() + " Radians--> " +theta_radians.toString() + (char) 0x00B0);
-            }catch(Exception ex){
-                Log.d("Exception :: ", "onLocationChanged: "+ex);
-            }*/
-        }
+            Log.v("IA Location Changed", location.toString());
+            }
     };
 
 
@@ -341,35 +397,3 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void onProviderDisabled(String s) {
     }
 }
-
-        /*
-        int degree = Math.round(sensorEvent.values[0]);
-
-        txt_deg.setText(Integer.toString(degree) + (char) 0x00B0);
-
-//        Double delta_x = lati - 45.4951929;
-//        Double delta_y = (longi)-(-73.5803635);
-//        Double theta_radians = Math.atan2(delta_y, delta_x);
-//        Double newDegree = Math.toDegrees(theta_radians);
-
-
-        PointF origin = new PointF();
-
-        RotateAnimation rs= new RotateAnimation(currentDegree, -degree, Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,
-                        0.5F);
-        //RotateAnimation rs2= new RotateAnimation(currentDegree, -degree+90, Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,
-               // 0.5F);
-
-
-        rs.setDuration(1000);
-        rs.setFillAfter(true);
-        //rs2.setDuration(1000);
-        //rs2.setFillAfter(true);
-
-
-        arrow.startAnimation(rs);
-        //imgV90.startAnimation(rs2);
-
-
-        currentDegree = -degree;
-        txt_deg.setText(sensorEvent.sensor.getType() + (char) 0x00B0);*/

@@ -1,4 +1,0 @@
-#Mon Mar 26 22:40:29 EDT 2018
-base.0=C\:\\Users\\RAZER\\Downloads\\augmented-reality-example-master\\CompassTest\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
-path.0=classes.dex
-renamed.0=classes.dex

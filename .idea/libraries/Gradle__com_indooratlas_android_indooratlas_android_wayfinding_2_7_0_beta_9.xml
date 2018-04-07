@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.indooratlas.android:indooratlas-android-wayfinding-2.7.0-beta-9">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/indooratlas-android-wayfinding-2.7.0-beta-9.aar/0ba0863d1f336f002a6d5a66d43e8fb2/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/indooratlas-android-wayfinding-2.7.0-beta-9.aar/0ba0863d1f336f002a6d5a66d43e8fb2/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/indooratlas-android-wayfinding-2.7.0-beta-9.aar/155e43561aab02d807d345370becae63/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/indooratlas-android-wayfinding-2.7.0-beta-9.aar/155e43561aab02d807d345370becae63/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.indooratlas.android/indooratlas-android-wayfinding/2.7.0-beta-9/aafb7295c19d37931591138fc36f3bbab47a4ab7/indooratlas-android-wayfinding-2.7.0-beta-9-javadoc.jar!/" />
