@@ -38,6 +38,7 @@ import com.indooratlas.android.sdk.IALocationRequest;
 import com.indooratlas.android.sdk.resources.IALocationListenerSupport;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final int REQUEST_CODE_ACCESS_COARSE_LOCATION = 1;
     private static final int CODE_PERMISSIONS = 0;
+    private static final float ALPHA = 0.25f;
     private static SensorManager sensorService;
 
     private Sensor sensor;
@@ -60,13 +62,28 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private Bitmap arrowImg;
     private AsyncTask<Void, Void, Void> asyncTask;
 
+    private ArrayList<Locationdata> locarray;
+
+    int count=0;
+
     // UI Components
     private ImageView arrow, imgV90;
-    private TextView txt_deg, random_text;
+    private TextView txt_deg, random_text,txt_dis,txt_cnt;
 
     private Camera mCamera;
     private SurfaceHolder mSurfaceHolder;
     private boolean isCameraviewOn = false;
+
+
+    private float grav[] = new float[3];
+    private float mag[] = new float[3];
+    protected float[] gravSensorVals;
+    protected float[] magSensorVals;
+
+    private float RTmp[] = new float[9];
+    private float Rot[] = new float[9];
+    private float I[] = new float[9];
+    private float results[] = new float[3];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +92,13 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         Log.v("Called","OnCreate Called");
 
-       // requestPermissions();
+        locarray = new ArrayList<>();
+
+        locarray.add(new Locationdata(45.4954215390295,-73.57823471727443));
+        locarray.add(new Locationdata(45.49546807242613,-73.5782481283195));
+        locarray.add(new Locationdata(45.49553246706309,-73.57823874058796));
+        locarray.add(new Locationdata(45.49564339487819,-73.5784613639362));
+        locarray.add(new Locationdata(45.495594511461185,-73.57851299645974));
 
         initUi();
 
@@ -105,9 +128,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         //views setups
         arrow = findViewById(R.id.img_arrow);
-        //imgV90 = findViewById(R.id.img_arrow2);
         txt_deg = findViewById(R.id.txt_degree);
         random_text = findViewById(R.id.random_text);
+        txt_dis =  findViewById(R.id.txt_distance);
+        txt_cnt = findViewById(R.id.count);
 
         // location getting updated over here
         random_text.setText("Done!");
@@ -128,8 +152,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         //destinationObj = new Location(locationManager.NETWORK_PROVIDER);
         destinationObj = new Location("");
-        destinationObj.setLatitude(45.49515126854131);
-        destinationObj.setLongitude(-73.58030833303928);
+        //destinationObj.setLatitude(45.49542952961549);
+        //destinationObj.setLongitude(-73.57802778482439);
 
 
         //check for user permissions
@@ -187,10 +211,25 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
      * https://stackoverflow.com/questions/7978618/rotating-an-imageview-like-a-compass-with-the-north-pole-set-elsewhere
      * https://stackoverflow.com/questions/10160144/android-destination-location
      *
-     * @param sensorEvent
+     * @param evt
      */
     @Override
-    public void onSensorChanged(SensorEvent sensorEvent) {
+    public void onSensorChanged(SensorEvent evt) {
+
+
+       /* if (evt.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+            gravSensorVals = lowPass(evt.values.clone(), gravSensorVals);
+            grav[0] = evt.values[0];
+            grav[1] = evt.values[1];
+            grav[2] = evt.values[2];
+
+        } else if (evt.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
+            magSensorVals = lowPass(evt.values.clone(), magSensorVals);
+            mag[0] = evt.values[0];
+            mag[1] = evt.values[1];
+            mag[2] = evt.values[2];
+
+        }*/
 
         ++sensorCallbacksCount;
 
@@ -198,8 +237,19 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             return;
         }
 
-        asyncTask = new AsyncSensorUpdater(sensorEvent);
+        asyncTask = new AsyncSensorUpdater(evt);
         asyncTask.execute();
+
+
+    }
+
+    protected float[] lowPass( float[] input, float[] output ) {
+        if ( output == null ) return input;
+
+        for ( int i=0; i<input.length; i++ ) {
+            output[i] = output[i] + ALPHA * (input[i] - output[i]);
+        }
+        return output;
     }
 
     /**
@@ -290,7 +340,26 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         protected Void doInBackground(Void... voids) {
             synchronized (LocationObj) {
                 float[] actual_orientation = new float[3];
-                switch (sensorEvent.sensor.getType()) {
+
+                if (sensorEvent.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+                    accelerometer_values = lowPass(sensorEvent.values.clone(), gravSensorVals);
+                    grav[0] = sensorEvent.values[0];
+                    grav[1] = sensorEvent.values[1];
+                    grav[2] = sensorEvent.values[2];
+                    sensorReady = true;
+
+                } else if (sensorEvent.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
+                    magnitude_values = lowPass(sensorEvent.values.clone(), magSensorVals);
+                    mag[0] = sensorEvent.values[0];
+                    mag[1] = sensorEvent.values[1];
+                    mag[2] = sensorEvent.values[2];
+                    mag[2] = sensorEvent.values[2];
+                    sensorReady = true;
+
+                }
+
+
+               /* switch (sensorEvent.sensor.getType()) {
                     case Sensor.TYPE_MAGNETIC_FIELD:
                         magnitude_values = sensorEvent.values.clone();
                         sensorReady = true;
@@ -298,7 +367,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                     case Sensor.TYPE_ACCELEROMETER:
                         accelerometer_values = sensorEvent.values.clone();
                         sensorReady = true;
-                }
+                }*/
 
 
                 Log.v("Sensor Values:", magnitude_values + "  " + accelerometer_values + " " + sensorReady);
@@ -313,6 +382,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                     SensorManager.getRotationMatrix(R, I, accelerometer_values, magnitude_values);
 
                     azimuth = (int) (Math.toDegrees(SensorManager.getOrientation(R, actual_orientation)[0]) + 360) % 360;
+
+                    //SensorManager.getOrientation(Rot, results);
+
+                   // azimuth = (int)(((results[0]*180)/Math.PI)+180);
 
                     Log.v(TAG, azimuth + "" + (char) 0x00B0);
                 }
@@ -380,8 +453,37 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             random_text.setText("Latitude :: " + location.getLatitude() + " Longitude :: " + location.getLongitude() + " Accuracy :: " + location.getAccuracy());
             LocationObj = location.toLocation();
 
+            count++;
+
             Log.v("IA Location Changed", location.toString());
+
+            if (!locarray.isEmpty())
+            {
+
+               // int sz = locarray.size();
+                int i = 0;
+
+                while (i<locarray.size())
+                {
+
+                        destinationObj.setLatitude(locarray.get(i).getLatitude());
+                        destinationObj.setLongitude(locarray.get(i).getLongitude());
+
+                        txt_dis.setText("Test Distance : "+location.toLocation().distanceTo(destinationObj));
+
+                        Float dis = location.toLocation().distanceTo(destinationObj);
+
+                        txt_cnt.setText("Count : "+count);
+
+                        if (Integer.valueOf(dis.intValue()) == 2 && count%10 == 0)
+                        {
+                            Toast.makeText(getApplicationContext(),"Reached !",Toast.LENGTH_SHORT).show();
+                        }
+
+                        i++;
+                }
             }
+        }
     };
 
 

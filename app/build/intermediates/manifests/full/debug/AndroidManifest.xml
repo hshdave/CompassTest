@@ -64,10 +64,10 @@
             android:value="@string/google_maps_key" />
         <meta-data
             android:name="com.indooratlas.android.sdk.API_KEY"
-            android:value="156f1f86-0964-4645-959a-cb90a90beb9c" />
+            android:value="8c3c08d2-6e34-4fff-8503-4128ad1c8345" />
         <meta-data
             android:name="com.indooratlas.android.sdk.API_SECRET"
-            android:value="R+wXAOpirp6NZ/oeAlL2epj9aqNBWO8tY+AIIrXFQqUnP8GDzljzre6hq25PlYkM42Bmo0L2Bz+8FlXtfarkXVh8SfhxM2BwDqC+lSY0Yt3tDN+iwK+Q0mjJHRAR8Q==" />
+            android:value="AeDvzLIlhIDx6YwY3f3gD9dN3pPDFtFztNRPap/cm+vmM51be/MD/YIwNypE7zeO4DnBFNqv0XHEdpzCNwDOI0apkbfZcQ0zY0+Z+6H8gy+9wkWtN5OhollFbQBy+g==" />
 
         <service
             android:name="com.indooratlas.android.sdk.IALocationService"
