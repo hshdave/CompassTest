@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="#000000"
     android:paddingBottom="0dp"
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
+    android:id="@+id/main_act"
     tools:context="com.zoom.event.compasstest.MainActivity">
 
 
@@ -17,7 +18,25 @@
         android:layout_height="wrap_content"
         android:id="@+id/cameraview"/>
 
-    <TextView
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:rotation="270"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow3" />
+
+
+    <ImageView
+        android:id="@+id/dialog_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/flag" />
+
+
+    <!--<TextView
         android:id="@+id/random_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,14 +47,6 @@
         android:textColor="#fff"
         android:textSize="24sp" />
 
-    <ImageView
-        android:id="@+id/img_arrow"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:rotation="270"
-        android:layout_centerInParent="true"
-        android:scaleType="centerInside"
-        android:src="@drawable/arrow3" />
 
     <TextView
         android:id="@+id/txt_degree"
@@ -51,25 +62,45 @@
 
     <TextView
         android:id="@+id/count"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="-36dp"
+        android:layout_marginEnd="-375dp"
         android:layout_marginTop="132dp"
         android:layout_toStartOf="@+id/txt_distance"
         android:text="0"
         android:textColor="#fff"
         android:textSize="24sp" />
 
+
+
+    <TextView
+        android:id="@+id/current_lati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#fff"
+        android:layout_marginTop="180dp"
+        android:hint="Lati" />
+
+    <TextView
+        android:id="@+id/current_longi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/current_lati"
+        android:textColor="#fff"
+        android:hint="Longi" />-->
+
+
     <TextView
         android:id="@+id/txt_distance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="89dp"
-        android:layout_marginStart="36dp"
-        android:text="0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp"
         android:textColor="#fff"
         android:textSize="24sp" />
 

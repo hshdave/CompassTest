@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zoom.event.compasstest">
+
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true" />
-    <uses-feature android:name="android.hardware.sensor.accelerometer"
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
         android:required="true" />
-    <uses-feature android:name="android.hardware.sensor.compass"
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
         android:required="true" />
-    <uses-feature android:name="android.hardware.sensor.gyroscope"
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
         android:required="true" />
-    <uses-feature android:name="android.hardware.wifi"
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.Camera"
         android:required="true" />
 
-    <uses-feature android:name="android.hardware.Camera"
-        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -23,17 +34,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <!--<meta-data-->
-            <!--android:name="com.google.android.gms.version"-->
-            <!--android:value="@integer/google_play_services_version" />-->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.version" -->
+        <!-- android:value="@integer/google_play_services_version" /> -->
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="@string/google_maps_key" />
@@ -44,12 +51,16 @@
             android:name="com.indooratlas.android.sdk.API_SECRET"
             android:value="AeDvzLIlhIDx6YwY3f3gD9dN3pPDFtFztNRPap/cm+vmM51be/MD/YIwNypE7zeO4DnBFNqv0XHEdpzCNwDOI0apkbfZcQ0zY0+Z+6H8gy+9wkWtN5OhollFbQBy+g==" />
 
-    </application>
+        <activity
+            android:name=".Splash_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.CAMERA" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>

@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Android\\CompassTest\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hu\\values-hu.xml",
+            "outputFile": "C:\\Users\\RAZER\\Downloads\\augmented-reality-example-master\\CompassTest\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hu\\values-hu.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HARSH\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\586df421558e479ec84345bbabb18f10\\res\\values-hu\\values-hu.xml",
+                    "source": "C:\\Users\\RAZER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\150f06bd27d8839ee8cef54e80d37e9e\\res\\values-hu\\values-hu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,318,433,517,629,759,835,911,994,1104,1215,1315,1426,1534,1653,1835,1938",
+                        "endColumns": "107,104,114,83,111,129,75,75,82,109,110,99,110,107,118,181,102,82",
+                        "endOffsets": "208,313,428,512,624,754,830,906,989,1099,1210,1310,1421,1529,1648,1830,1933,2016"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\RAZER\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ca6e78cad59dbbde2073a3aa785cf92b\\res\\values-hu\\values-hu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -18,16 +28,6 @@
                         "startOffsets": "2021",
                         "endColumns": "100",
                         "endOffsets": "2117"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HARSH\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\1d971e78fc78adb9389e36e179e8f195\\res\\values-hu\\values-hu.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,213,318,433,517,629,759,835,911,994,1104,1215,1315,1426,1534,1653,1835,1938",
-                        "endColumns": "107,104,114,83,111,129,75,75,82,109,110,99,110,107,118,181,102,82",
-                        "endOffsets": "208,313,428,512,624,754,830,906,989,1099,1210,1310,1421,1529,1648,1830,1933,2016"
                     }
                 }
             ]

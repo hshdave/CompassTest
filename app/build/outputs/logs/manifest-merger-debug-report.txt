@@ -1,221 +1,244 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:2:1-55:12
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:2:1-36:12
-MERGED from [com.indooratlas.android:indooratlas-android-wayfinding:2.7.0-beta-9] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-wayfinding-2.7.0-beta-9.aar\752fbc45afe64f01c582980efb55d585\AndroidManifest.xml:2:1-18:12
-MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\1d971e78fc78adb9389e36e179e8f195\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\49a55f0e549b7c2b60cf492ec7554620\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\1cfa5434edf965029dbd6ac6becb8383\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\3d62ad6ef979464b9550b07577435258\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\daccfb98b59fac6742d4fdcbd3c1c0ea\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\801fbd5117e00f87a3075a6813816330\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\d8d48866f692dae85515763eb3bf1715\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\586df421558e479ec84345bbabb18f10\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\cfee4a4520926953c98355fc3366f62b\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\5211e1fdb3349a162bd8c27bd6913ad2\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\2bdbf228d22deda5440fa20884308eae\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9b127b32c0aa538fa707ce7d2723ef84\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:2:1-55:12
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:2:1-63:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\74bd9eba330543d3bf0959366370e648\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\6c3d8eda5a05c4f9bf531691bd1f5512\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\150f06bd27d8839ee8cef54e80d37e9e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:2:1-36:12
+MERGED from [com.indooratlas.android:indooratlas-android-wayfinding:2.7.0-beta-9] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-wayfinding-2.7.0-beta-9.aar\0feed5a66d0c563b57bd25e5198ec673\AndroidManifest.xml:2:1-18:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\62a2a2e0a5a82b56c5980128b905da44\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\5cfffd047e78d6f425b8b781f4f3f4cf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\7346b90d8de8152447753615ad1ef0ab\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\b664e686b281dcf08511380595a4680d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d907adce66f7bad589d3c0d1a310ccb5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\f54f233ce4b9fb62a310961defd06c6b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\e6504ca913f08cf4dc6f7b1d36ad7fda\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\eaaf8fbbe5f5cfdf4df0decd9c400c75\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\370fb9e35356f0907ad9b08d11012a8d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\ca6e78cad59dbbde2073a3aa785cf92b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9ac4104565ad182f09b118b9b1c78c6d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\c58d5c09492b9378cd79e18ef8d090f5\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7728b60a2619cf22b67f6dcbe12fe614\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\7c817b2a47ab52abf5dc2cca2b0faee3\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:2:1-63:12
 	package
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:3:5-41
-		INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:3:5-41
+		INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:2:1-55:12
-		INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:2:1-63:12
+		INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:2:1-55:12
-		INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:2:1-63:12
+		INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:2:11-69
 uses-feature#0x00020000
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:4:5-6:35
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:5:5-7:35
 	android:glEsVersion
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:5:9-41
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:6:9-41
 	android:required
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:6:9-32
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:7:9-32
 uses-feature#android.hardware.sensor.accelerometer
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:7:5-8:35
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:17:5-19:36
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:17:5-19:36
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:8:5-10:35
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:17:5-19:36
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:17:5-19:36
 	android:required
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:8:9-32
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:10:9-32
 	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:7:19-71
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:9:9-61
 uses-feature#android.hardware.sensor.compass
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:9:5-10:35
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:20:5-22:36
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:20:5-22:36
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:11:5-13:35
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:20:5-22:36
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:20:5-22:36
 	android:required
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:10:9-32
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:13:9-32
 	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:9:19-65
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:12:9-55
 uses-feature#android.hardware.sensor.gyroscope
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:11:5-12:35
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:23:5-25:36
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:23:5-25:36
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:14:5-16:35
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:23:5-25:36
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:23:5-25:36
 	android:required
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:12:9-32
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:16:9-32
 	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:11:19-67
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:15:9-57
 uses-feature#android.hardware.wifi
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:13:5-14:35
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:26:5-28:35
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:26:5-28:35
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:17:5-19:35
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:26:5-28:35
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:26:5-28:35
 	android:required
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:14:9-32
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:19:9-32
 	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:13:19-55
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:18:9-45
 uses-feature#android.hardware.Camera
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:16:5-17:35
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:20:5-22:35
 	android:required
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:17:9-32
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:22:9-32
 	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:16:19-57
-application
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:19:5-47:19
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:30:5-34:19
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:30:5-34:19
-MERGED from [com.indooratlas.android:indooratlas-android-wayfinding:2.7.0-beta-9] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-wayfinding-2.7.0-beta-9.aar\752fbc45afe64f01c582980efb55d585\AndroidManifest.xml:11:5-16:19
-MERGED from [com.indooratlas.android:indooratlas-android-wayfinding:2.7.0-beta-9] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-wayfinding-2.7.0-beta-9.aar\752fbc45afe64f01c582980efb55d585\AndroidManifest.xml:11:5-16:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\49a55f0e549b7c2b60cf492ec7554620\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\49a55f0e549b7c2b60cf492ec7554620\AndroidManifest.xml:9:5-20
-	android:supportsRtl
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:24:9-35
-	android:label
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:22:9-41
-	android:roundIcon
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:23:9-54
-	android:icon
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:21:9-43
-	android:allowBackup
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:20:9-35
-	android:theme
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:25:9-40
-activity#com.zoom.event.compasstest.MainActivity
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:26:9-32:20
-	android:screenOrientation
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:26:48-84
-	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:26:19-47
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:27:13-31:29
-action#android.intent.action.MAIN
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:28:17-69
-	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:28:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:30:17-77
-	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:30:27-74
-meta-data#com.google.android.maps.v2.API_KEY
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:37:9-39:55
-	android:value
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:39:13-52
-	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:38:13-62
-meta-data#com.indooratlas.android.sdk.API_KEY
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:40:9-42:68
-	android:value
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:42:13-65
-	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:41:13-63
-meta-data#com.indooratlas.android.sdk.API_SECRET
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:43:9-45:160
-	android:value
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:45:13-157
-	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:44:13-66
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:21:9-47
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:49:5-80
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:15:5-81
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:15:5-81
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:24:5-81
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:15:5-81
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:49:22-78
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:24:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:50:5-78
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:25:5-79
 	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:50:22-76
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:25:22-76
 uses-permission#android.permission.BLUETOOTH
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:51:5-68
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:26:5-68
 	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:51:22-65
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:26:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:52:5-74
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:27:5-74
 	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:52:22-71
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:27:22-71
 uses-permission#android.permission.CAMERA
-ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:53:5-65
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:28:5-65
 	android:name
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml:53:22-62
-uses-sdk
-INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:7:5-9:41
-MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:7:5-9:41
-MERGED from [com.indooratlas.android:indooratlas-android-wayfinding:2.7.0-beta-9] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-wayfinding-2.7.0-beta-9.aar\752fbc45afe64f01c582980efb55d585\AndroidManifest.xml:7:5-9:41
-MERGED from [com.indooratlas.android:indooratlas-android-wayfinding:2.7.0-beta-9] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-wayfinding-2.7.0-beta-9.aar\752fbc45afe64f01c582980efb55d585\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\1d971e78fc78adb9389e36e179e8f195\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\1d971e78fc78adb9389e36e179e8f195\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\49a55f0e549b7c2b60cf492ec7554620\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\49a55f0e549b7c2b60cf492ec7554620\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\1cfa5434edf965029dbd6ac6becb8383\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\1cfa5434edf965029dbd6ac6becb8383\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\3d62ad6ef979464b9550b07577435258\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\3d62ad6ef979464b9550b07577435258\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\daccfb98b59fac6742d4fdcbd3c1c0ea\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\daccfb98b59fac6742d4fdcbd3c1c0ea\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\801fbd5117e00f87a3075a6813816330\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\801fbd5117e00f87a3075a6813816330\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\d8d48866f692dae85515763eb3bf1715\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\d8d48866f692dae85515763eb3bf1715\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\586df421558e479ec84345bbabb18f10\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\586df421558e479ec84345bbabb18f10\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\cfee4a4520926953c98355fc3366f62b\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\cfee4a4520926953c98355fc3366f62b\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\5211e1fdb3349a162bd8c27bd6913ad2\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\5211e1fdb3349a162bd8c27bd6913ad2\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\2bdbf228d22deda5440fa20884308eae\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\2bdbf228d22deda5440fa20884308eae\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9b127b32c0aa538fa707ce7d2723ef84\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9b127b32c0aa538fa707ce7d2723ef84\AndroidManifest.xml:20:5-44
-INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-	android:targetSdkVersion
-		INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\CompassTest\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:11:5-79
-	android:name
-		ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:11:22-76
-uses-permission#android.permission.INTERNET
-ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:12:5-67
-	android:name
-		ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:12:22-64
-uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:13:5-76
-	android:name
-		ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:13:22-73
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:14:5-76
-	android:name
-		ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:14:22-73
-service#com.indooratlas.android.sdk.IALocationService
-ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:31:9-33:49
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:28:22-62
+application
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:30:5-61:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\74bd9eba330543d3bf0959366370e648\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\74bd9eba330543d3bf0959366370e648\AndroidManifest.xml:9:5-20
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:30:5-34:19
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:30:5-34:19
+MERGED from [com.indooratlas.android:indooratlas-android-wayfinding:2.7.0-beta-9] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-wayfinding-2.7.0-beta-9.aar\0feed5a66d0c563b57bd25e5198ec673\AndroidManifest.xml:11:5-16:19
+MERGED from [com.indooratlas.android:indooratlas-android-wayfinding:2.7.0-beta-9] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-wayfinding-2.7.0-beta-9.aar\0feed5a66d0c563b57bd25e5198ec673\AndroidManifest.xml:11:5-16:19
+	android:supportsRtl
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:35:9-35
 	android:label
-		ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:33:13-46
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:33:9-41
+	android:roundIcon
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:34:9-54
+	android:icon
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:32:9-43
+	android:allowBackup
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:31:9-35
+	android:theme
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:36:9-40
+activity#com.zoom.event.compasstest.MainActivity
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:37:9-39:51
+	android:screenOrientation
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:39:13-49
 	android:name
-		ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\HARSH\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\21b519fd15755846c923596642873899\AndroidManifest.xml:32:13-73
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:38:13-41
+meta-data#com.google.android.maps.v2.API_KEY
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:44:9-46:55
+	android:value
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:46:13-52
+	android:name
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:45:13-62
+meta-data#com.indooratlas.android.sdk.API_KEY
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:47:9-49:68
+	android:value
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:49:13-65
+	android:name
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:48:13-63
+meta-data#com.indooratlas.android.sdk.API_SECRET
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:50:9-52:160
+	android:value
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:52:13-157
+	android:name
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:51:13-66
+activity#com.zoom.event.compasstest.Splash_activity
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:54:9-60:20
+	android:screenOrientation
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:54:51-87
+	android:theme
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:54:90-146
+	android:name
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:54:19-50
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:55:13-59:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:56:17-69
+	android:name
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:56:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:58:17-77
+	android:name
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml:58:27-74
+uses-sdk
+INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\74bd9eba330543d3bf0959366370e648\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\74bd9eba330543d3bf0959366370e648\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\6c3d8eda5a05c4f9bf531691bd1f5512\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\6c3d8eda5a05c4f9bf531691bd1f5512\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\150f06bd27d8839ee8cef54e80d37e9e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\150f06bd27d8839ee8cef54e80d37e9e\AndroidManifest.xml:20:5-44
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:7:5-9:41
+MERGED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:7:5-9:41
+MERGED from [com.indooratlas.android:indooratlas-android-wayfinding:2.7.0-beta-9] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-wayfinding-2.7.0-beta-9.aar\0feed5a66d0c563b57bd25e5198ec673\AndroidManifest.xml:7:5-9:41
+MERGED from [com.indooratlas.android:indooratlas-android-wayfinding:2.7.0-beta-9] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-wayfinding-2.7.0-beta-9.aar\0feed5a66d0c563b57bd25e5198ec673\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\62a2a2e0a5a82b56c5980128b905da44\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\62a2a2e0a5a82b56c5980128b905da44\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\5cfffd047e78d6f425b8b781f4f3f4cf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\5cfffd047e78d6f425b8b781f4f3f4cf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\7346b90d8de8152447753615ad1ef0ab\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\7346b90d8de8152447753615ad1ef0ab\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\b664e686b281dcf08511380595a4680d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\b664e686b281dcf08511380595a4680d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d907adce66f7bad589d3c0d1a310ccb5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d907adce66f7bad589d3c0d1a310ccb5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\f54f233ce4b9fb62a310961defd06c6b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\f54f233ce4b9fb62a310961defd06c6b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\e6504ca913f08cf4dc6f7b1d36ad7fda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\e6504ca913f08cf4dc6f7b1d36ad7fda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\eaaf8fbbe5f5cfdf4df0decd9c400c75\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\eaaf8fbbe5f5cfdf4df0decd9c400c75\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\370fb9e35356f0907ad9b08d11012a8d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\370fb9e35356f0907ad9b08d11012a8d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\ca6e78cad59dbbde2073a3aa785cf92b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\ca6e78cad59dbbde2073a3aa785cf92b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9ac4104565ad182f09b118b9b1c78c6d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9ac4104565ad182f09b118b9b1c78c6d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\c58d5c09492b9378cd79e18ef8d090f5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\c58d5c09492b9378cd79e18ef8d090f5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7728b60a2619cf22b67f6dcbe12fe614\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7728b60a2619cf22b67f6dcbe12fe614\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\7c817b2a47ab52abf5dc2cca2b0faee3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\7c817b2a47ab52abf5dc2cca2b0faee3\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:11:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:12:22-64
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:13:5-76
+	android:name
+		ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:13:22-73
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:14:5-76
+	android:name
+		ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:14:22-73
+service#com.indooratlas.android.sdk.IALocationService
+ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:31:9-33:49
+	android:label
+		ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:33:13-46
+	android:name
+		ADDED from [com.indooratlas.android:indooratlas-android-sdk:2.7.0-beta-848] C:\Users\RAZER\.gradle\caches\transforms-1\files-1.1\indooratlas-android-sdk-2.7.0-beta-848.aar\7f6acd9fba1750b144bf9f57cfd73105\AndroidManifest.xml:32:13-73

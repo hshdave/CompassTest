@@ -5,80 +5,124 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="METHOD_DELETED"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.1.0"
-    timestamp="1523214810651"
-    token="5347995112082173794"
+    timestamp="1523244406698"
+    token="235544559678105271"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="159" />
+        duration="185" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="21" />
+        duration="20" />
     <task
         name="verifier"
-        duration="7" />
+        duration="4" />
 
     <artifact
-        location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1523214222431"
+        timestamp="1523243275813"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="METHOD_DELETED"
-        timestamp="1523214810651"
+        timestamp="1523244159765"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="D:\Android\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1523244406698"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\RAZER\Downloads\augmented-reality-example-master\CompassTest\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
     </build>
 

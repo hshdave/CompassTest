@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Android\\CompassTest\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
+            "outputFile": "C:\\Users\\RAZER\\Downloads\\augmented-reality-example-master\\CompassTest\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HARSH\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\1d971e78fc78adb9389e36e179e8f195\\res\\values-fi\\values-fi.xml",
+                    "source": "C:\\Users\\RAZER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\150f06bd27d8839ee8cef54e80d37e9e\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HARSH\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\586df421558e479ec84345bbabb18f10\\res\\values-fi\\values-fi.xml",
+                    "source": "C:\\Users\\RAZER\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ca6e78cad59dbbde2073a3aa785cf92b\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

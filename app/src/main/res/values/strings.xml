@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Indoor Navigation</string>
-    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+    <string name="app_name">Nav-In</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
 AIzaSyDAAMLJ1CG0LyTPWW8GLa0QLMEd8jH1zk0
 </string>
 </resources>

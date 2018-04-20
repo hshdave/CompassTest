@@ -1,4 +1,4 @@
-#Sat Apr 07 18:58:59 EDT 2018
-base.0=D\:\\Android\\CompassTest\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+#Sun Apr 08 23:23:10 EDT 2018
+base.0=C\:\\Users\\RAZER\\Downloads\\augmented-reality-example-master\\CompassTest\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
 path.0=classes.dex
 renamed.0=classes.dex

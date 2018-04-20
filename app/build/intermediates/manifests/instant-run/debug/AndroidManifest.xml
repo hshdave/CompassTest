@@ -48,13 +48,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.zoom.event.compasstest.MainActivity"
-            android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:screenOrientation="portrait" />
 
         <!-- <meta-data -->
         <!-- android:name="com.google.android.gms.version" -->
@@ -68,6 +62,17 @@
         <meta-data
             android:name="com.indooratlas.android.sdk.API_SECRET"
             android:value="AeDvzLIlhIDx6YwY3f3gD9dN3pPDFtFztNRPap/cm+vmM51be/MD/YIwNypE7zeO4DnBFNqv0XHEdpzCNwDOI0apkbfZcQ0zY0+Z+6H8gy+9wkWtN5OhollFbQBy+g==" />
+
+        <activity
+            android:name="com.zoom.event.compasstest.Splash_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <service
             android:name="com.indooratlas.android.sdk.IALocationService"
