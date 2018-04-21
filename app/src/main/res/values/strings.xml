@@ -3,4 +3,14 @@
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
 AIzaSyDAAMLJ1CG0LyTPWW8GLa0QLMEd8jH1zk0
 </string>
+
+    <string-array name="Loclist">
+        <item>Select Location</item>
+        <item>loca1</item>
+        <item>Fire Exit</item>
+        <item>8.185 Lab</item>
+
+    </string-array>
+
+
 </resources>

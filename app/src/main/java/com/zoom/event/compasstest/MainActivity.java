@@ -40,7 +40,12 @@ import com.indooratlas.android.sdk.IALocationManager;
 import com.indooratlas.android.sdk.IALocationRequest;
 import com.indooratlas.android.sdk.resources.IALocationListenerSupport;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener, SurfaceHolder.Callback,LocationListener {
@@ -63,10 +68,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private Bitmap arrowImg;
     private AsyncTask<Void, Void, Void> asyncTask;
 
-    private ArrayList<Locationdata> locarray;
+     ArrayList<Locationdata> locarray;
 
     int count=0;
-
     // UI Components
     private ImageView arrow, finaimg;
     /*private TextView txt_deg, random_text,txt_cnt;*/
@@ -82,11 +86,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     protected float[] gravSensorVals;
     protected float[] magSensorVals;
 
-    private float RTmp[] = new float[9];
-    private float Rot[] = new float[9];
-    private float I[] = new float[9];
-    private float results[] = new float[3];
-
     TextView txt_lati, txt_longi;
     static int cnt = 0;
 
@@ -97,7 +96,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         Log.v("Called","OnCreate Called");
 
-        locarray = new ArrayList<>();
+        //locarray = new ArrayList<>();
+
+        locarray = (ArrayList<Locationdata>) getIntent().getSerializableExtra("loc");
 
         /*locarray.add(new Locationdata(45.49544786095555,-73.57820212841035));
         locarray.add(new Locationdata(45.49549204416089,-73.57815787196161));
@@ -106,10 +107,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         locarray.add(new Locationdata(45.495451621229705,-73.57781052589418));*/
 
 
-        locarray.add(new Locationdata(45.49552626261378, -73.57822626829149));
+    /*    locarray.add(new Locationdata(45.49552626261378, -73.57822626829149));
         locarray.add(new Locationdata(45.495505581130274, -73.57818335294725));
         locarray.add(new Locationdata(45.49559676761408, -73.57809618115425));
-        locarray.add(new Locationdata(45.49572461645614, -73.57836440205575));
+        locarray.add(new Locationdata(45.49572461645614, -73.57836440205575));*/
+
+    System.out.println("Mainactivity Array "+ locarray.toString() +"   Size :"+locarray.size());
+
+        for (int j=0;j<locarray.size();j++)
+        {
+            System.out.println("FROM PRE METHOD "+locarray.get(j).getLatitude());
+        }
 
         initUi();
 
@@ -120,6 +128,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     }
     private void initUi() {
+
         getWindow().setFormat(PixelFormat.UNKNOWN);
         SurfaceView surfaceView =  findViewById(R.id.cameraview);
         mSurfaceHolder = surfaceView.getHolder();
@@ -319,6 +328,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     }
 
+
     private class AsyncSensorUpdater extends AsyncTask<Void, Void, Void> {
         private SensorEvent sensorEvent;
         float direction;
@@ -326,6 +336,13 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         private AsyncSensorUpdater(SensorEvent sensorEvent) {
             this.sensorEvent = sensorEvent;
+        }
+
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
         }
 
         @Override
@@ -451,6 +468,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 for (int i = 0; i < locarray.size(); i++)
                 {
                     if (cnt < locarray.size()) {
+
                         destinationObj.setLatitude(locarray.get(cnt).getLatitude());
                         destinationObj.setLongitude(locarray.get(cnt).getLongitude());
 
@@ -518,4 +536,5 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     public void onProviderDisabled(String s) {
     }
+
 }

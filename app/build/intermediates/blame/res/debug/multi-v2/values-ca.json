@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\RAZER\\Downloads\\augmented-reality-example-master\\CompassTest\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
+            "outputFile": "D:\\Android\\CompassTest\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\RAZER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\150f06bd27d8839ee8cef54e80d37e9e\\res\\values-ca\\values-ca.xml",
+                    "source": "C:\\Users\\HARSH\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\0a0ff9dbc074b5da99340b04e2ae8a91\\res\\values-ca\\values-ca.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\RAZER\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ca6e78cad59dbbde2073a3aa785cf92b\\res\\values-ca\\values-ca.xml",
+                    "source": "C:\\Users\\HARSH\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\5e2f3f74783331ab255738924a204c8e\\res\\values-ca\\values-ca.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
